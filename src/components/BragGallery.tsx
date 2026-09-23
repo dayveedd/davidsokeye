@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { Project } from '../types/portfolio';
 import { BragProjectCard } from './BragProjectCard';
 
@@ -15,17 +14,17 @@ export const BragGallery: React.FC<BragGalleryProps> = ({
   onOpenContact,
 }) => {
   return (
-    <section id="projects" className="gallery bg-brag-dark text-brag-dark-ink py-16 sm:py-24 lg:py-32 px-5 sm:px-8 lg:px-10 relative">
+    <section id="projects" className="gallery bg-brag-dark text-brag-dark-ink py-16 sm:py-24 lg:py-32 px-4 sm:px-8 lg:px-10 relative w-full max-w-full overflow-hidden">
       {/* Subtle top rule */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brag-dark-rule to-transparent" />
 
       {/* Gallery Head */}
-      <div className="gallery-head max-w-[var(--max-page)] mx-auto mb-10 sm:mb-16 grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 items-end">
+      <div className="gallery-head max-w-[var(--max-page)] mx-auto mb-10 sm:mb-16 grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6 sm:gap-8 items-end">
         <div>
           <p className="gallery-eyebrow font-mono text-xs tracking-wider uppercase text-brag-accent mb-3">
             seven production builds · cross-platform systems
           </p>
-          <h2 className="gallery-title text-[clamp(36px,5.5vw,80px)] leading-[0.95] tracking-tight-brag font-bold m-0 lowercase max-w-[16ch]">
+          <h2 className="gallery-title text-[clamp(34px,5.2vw,80px)] leading-[0.95] tracking-tight-brag font-bold m-0 lowercase max-w-[16ch]">
             what senior <em className="italic text-brag-accent not-italic">mobile</em> engineering looks like.
           </h2>
         </div>
@@ -36,7 +35,7 @@ export const BragGallery: React.FC<BragGalleryProps> = ({
       </div>
 
       {/* Projects Grid: 2 columns matching latent-spaces/brag */}
-      <div className="grid max-w-[var(--max-page)] mx-auto grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+      <div className="grid max-w-[var(--max-page)] mx-auto grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 lg:gap-8 w-full max-w-full">
         {projects.map((project) => (
           <BragProjectCard
             key={project.id}
@@ -49,11 +48,11 @@ export const BragGallery: React.FC<BragGalleryProps> = ({
         <article className="card grid grid-rows-[auto_auto] gap-3 relative group">
           <div
             onClick={onOpenContact}
-            className="card-media striped-cta-bg relative aspect-[16/10] sm:aspect-[16/9] rounded-brag-md border border-transparent overflow-hidden cursor-pointer flex items-center justify-center transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-[0_24px_60px_-24px_rgba(255,93,40,0.5)]"
+            className="card-media striped-cta-bg relative aspect-[16/10] sm:aspect-[16/9] rounded-brag-md border border-brag-dark-rule overflow-hidden cursor-pointer flex items-center justify-center transition-all duration-300 hover:border-brag-accent hover:-translate-y-1 hover:shadow-[0_24px_60px_-24px_rgba(56,189,248,0.3)]"
           >
-            <div className="relative z-10 font-sans font-[900] text-[clamp(24px,3.2vw,40px)] leading-[0.9] tracking-tighter-brag lowercase text-brag-ink text-center select-none px-4">
+            <div className="relative z-10 font-sans font-[900] text-[clamp(24px,3.2vw,40px)] leading-[0.9] tracking-tighter-brag lowercase text-white text-center select-none px-4">
               your app here.<br />
-              <span className="italic underline underline-offset-4">let's build.</span>
+              <span className="italic text-brag-accent underline underline-offset-4">let's build.</span>
             </div>
           </div>
 
@@ -74,7 +73,7 @@ export const BragGallery: React.FC<BragGalleryProps> = ({
                 full-time / contracts
               </h3>
               <span className="text-xs text-brag-dark-soft truncate hidden sm:inline">
-                · global remote (usd)
+                · global remote
               </span>
             </div>
             <span className="cap-cat ml-auto font-mono text-[10px] sm:text-[11px] tracking-wider uppercase text-brag-accent whitespace-nowrap">

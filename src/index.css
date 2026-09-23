@@ -3,26 +3,29 @@
 @tailwind utilities;
 
 :root {
-  --hue: 35;
+  /* Cooler, toned-down, sophisticated palette */
+  /* Deep cool slate / midnight obsidian background */
+  --hero-bg: #141A26;
+  --hero-ink: #F8FAFC;
+  --hero-ink-soft: #94A3B8;
+  --hero-tint: #FFFFFF;
+  --hero-accent: #38BDF8; /* Cool electric ice blue */
+  --hero-accent-dim: rgba(56, 189, 248, 0.15);
 
-  --hero-bg: oklch(64% 0.22 var(--hue));
-  --hero-ink: oklch(16% 0.06 var(--hue));
-  --hero-ink-soft: oklch(28% 0.06 var(--hue));
-  --hero-tint: oklch(96% 0.02 var(--hue));
-
-  --dark-bg: oklch(14% 0.03 var(--hue));
-  --dark-bg-elev: oklch(18% 0.04 var(--hue));
-  --dark-ink: oklch(96% 0.02 var(--hue));
-  --dark-ink-soft: oklch(72% 0.04 var(--hue));
-  --dark-rule: oklch(26% 0.03 var(--hue));
-  --dark-accent: oklch(72% 0.22 var(--hue));
+  --dark-bg: #0B0E14;
+  --dark-bg-elev: #111622;
+  --dark-ink: #F8FAFC;
+  --dark-ink-soft: #8B9BB4;
+  --dark-rule: #1E2638;
+  --dark-accent: #38BDF8; /* Cool cyan / ice blue */
+  --dark-accent-hover: #0EA5E9;
 
   --radius-sm: 6px;
   --radius-md: 12px;
   --radius-lg: 18px;
 
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-  --max-page: 1480px;
+  --max-page: 1440px;
 }
 
 @layer base {
@@ -33,11 +36,20 @@
   html, body {
     margin: 0;
     padding: 0;
-    background: var(--hero-bg);
-    color: var(--hero-ink);
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    background: var(--dark-bg);
+    color: var(--dark-ink);
     font-family: 'Geist', ui-sans-serif, system-ui, -apple-system, sans-serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    touch-action: pan-y;
+  }
+
+  #root {
+    width: 100%;
+    overflow-x: hidden;
   }
 
   img, video {
@@ -66,8 +78,8 @@
     to bottom,
     transparent 0,
     transparent 3px,
-    rgba(255, 255, 255, 0.05) 3px,
-    rgba(255, 255, 255, 0.05) 4px
+    rgba(255, 255, 255, 0.03) 3px,
+    rgba(255, 255, 255, 0.03) 4px
   );
   pointer-events: none;
   z-index: 2;
@@ -75,7 +87,7 @@
 
 /* Striped background pattern for CTA card */
 .striped-cta-bg {
-  background: var(--dark-accent);
+  background: #182232;
   position: relative;
   overflow: hidden;
 }
@@ -88,16 +100,16 @@
     -45deg,
     transparent 0,
     transparent 28px,
-    oklch(15% 0.06 var(--hue) / 0.08) 28px,
-    oklch(15% 0.06 var(--hue) / 0.08) 30px
+    rgba(56, 189, 248, 0.05) 28px,
+    rgba(56, 189, 248, 0.05) 30px
   );
   pointer-events: none;
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
   background: var(--dark-bg);

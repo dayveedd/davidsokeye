@@ -90,7 +90,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
                   Swift (iOS) & Flutter (Cross-Platform) · Systems & AI Architect
                 </p>
                 <p className="text-xs text-text-secondary mt-2">
-                  Targeting Global Remote Roles (USD) · Full-Time / High-Impact Contracts
+                  Targeting Global Remote Roles · Full-Time / High-Impact Contracts
                 </p>
               </div>
 
@@ -166,11 +166,11 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
                 <div className="p-3.5 rounded-xl bg-background border border-border/80">
                   <div className="flex justify-between font-bold text-text-primary">
-                    <span>Systems & Security Engineer · Sabi SDK & Vido Vault</span>
+                    <span>Systems & Security Engineer · Vido Vault & Web3</span>
                     <span className="text-emerald-400 font-mono font-normal">2021 - 2023</span>
                   </div>
                   <p className="mt-1.5 leading-relaxed">
-                    Authored C++ FFI tamper telemetry engines and Apple Secure Enclave hardware key derivation securing $12M+ in multi-chain assets with zero security incidents.
+                    Authored Dart & Web3Auth cryptographic isolation engines, Google Authenticator MFA integration, and on-device hardware biometrics with zero security incidents.
                   </p>
                 </div>
               </div>

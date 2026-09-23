@@ -255,8 +255,8 @@ export const ProjectMockupIllustration: React.FC<ProjectMockupIllustrationProps>
               <span className="text-text-primary">BIP-39 / BIP-44 Sidechannel-Safe</span>
             </div>
             <div className="flex justify-between text-zinc-400">
-              <span>Total Secured TVL:</span>
-              <span className="text-emerald-400 font-bold">$12,000,000+</span>
+              <span>Authentication:</span>
+              <span className="text-sky-400 font-bold">Google Auth MFA + Biometrics</span>
             </div>
           </div>
 

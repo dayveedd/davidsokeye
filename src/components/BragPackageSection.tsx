@@ -11,16 +11,16 @@ export const BragPackageSection: React.FC = () => {
   };
 
   return (
-    <section id="package" className="bg-brag-dark-elev text-brag-dark-ink py-16 sm:py-24 px-5 sm:px-8 lg:px-10 border-t border-brag-dark-rule relative">
-      <div className="max-w-[var(--max-page)] mx-auto">
+    <section id="package" className="bg-brag-dark-elev text-brag-dark-ink py-16 sm:py-24 px-4 sm:px-8 lg:px-10 border-t border-brag-dark-rule relative w-full max-w-full overflow-hidden">
+      <div className="max-w-[var(--max-page)] mx-auto w-full">
         
         {/* Section Header */}
         <div className="mb-10 sm:mb-12">
           <p className="font-mono text-xs tracking-wider uppercase text-brag-accent mb-2">
             open-source contribution · flutter ecosystem
           </p>
-          <h2 className="text-[clamp(32px,4vw,64px)] font-bold tracking-tight-brag lowercase leading-[1.0] text-brag-dark-ink">
-            digital_ocean_uploader <span className="font-mono text-xl sm:text-2xl font-normal text-brag-accent">^1.0.0</span>
+          <h2 className="text-[clamp(30px,4vw,64px)] font-bold tracking-tight-brag lowercase leading-[1.0] text-brag-dark-ink">
+            digital_ocean_uploader <span className="font-mono text-lg sm:text-2xl font-normal text-brag-accent">^1.0.0</span>
           </h2>
           <p className="mt-3 text-brag-dark-soft max-w-[58ch] text-sm sm:text-base leading-relaxed">
             A lightweight, pure-Dart package for generating signed URLs and uploading files directly to Digital Ocean Spaces (S3-compatible) via REST API. Eliminates massive AWS SDKs in Flutter.
@@ -28,16 +28,16 @@ export const BragPackageSection: React.FC = () => {
         </div>
 
         {/* 2-Column Info Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start w-full max-w-full">
           
           {/* Left: Terminal Installation & Code Snippet */}
-          <div className="lg:col-span-7 space-y-4 font-mono text-xs">
+          <div className="lg:col-span-7 space-y-4 font-mono text-xs w-full max-w-full min-w-0">
             {/* Install Box */}
-            <div className="install-stack">
+            <div className="install-stack w-full max-w-full min-w-0">
               <span className="install-label font-mono text-[11px] tracking-wider uppercase text-brag-dark-soft">
                 installation
               </span>
-              <pre className="install font-mono bg-black text-brag-tint p-4 sm:p-5 rounded-brag-md text-xs sm:text-sm leading-relaxed relative w-full border border-brag-dark-rule">
+              <pre className="install font-mono bg-black text-brag-tint p-4 sm:p-5 rounded-brag-md text-xs sm:text-sm leading-relaxed relative w-full border border-brag-dark-rule max-w-full overflow-hidden">
                 <span className="copy-wrap absolute top-3 right-3">
                   <button
                     onClick={() => copyCode('flutter pub add digital_ocean_uploader', 'install')}
@@ -51,18 +51,18 @@ export const BragPackageSection: React.FC = () => {
                     {copied === 'install' ? 'copied!' : 'copy'}
                   </button>
                 </span>
-                <code className="block pr-16 overflow-x-auto">
+                <code className="block pr-16 overflow-x-auto text-[11px] sm:text-xs">
                   <span className="prompt text-brag-accent mr-2">$</span>flutter pub add digital_ocean_uploader
                 </code>
               </pre>
             </div>
 
             {/* Code Sample */}
-            <div className="install-stack pt-2">
+            <div className="install-stack pt-2 w-full max-w-full min-w-0">
               <span className="install-label font-mono text-[11px] tracking-wider uppercase text-brag-dark-soft">
                 quick implementation
               </span>
-              <pre className="install font-mono bg-black text-brag-tint p-4 sm:p-5 rounded-brag-md text-xs leading-relaxed relative w-full border border-brag-dark-rule overflow-x-auto">
+              <pre className="install font-mono bg-black text-brag-tint p-4 sm:p-5 rounded-brag-md text-xs leading-relaxed relative w-full border border-brag-dark-rule max-w-full overflow-hidden">
                 <span className="copy-wrap absolute top-3 right-3">
                   <button
                     onClick={() => copyCode(`final uploader = DigitalOceanUploader(
@@ -82,7 +82,7 @@ final String? url = await uploader.uploadWithUniqueKey(imageFile);`, 'code')}
                     {copied === 'code' ? 'copied!' : 'copy'}
                   </button>
                 </span>
-                <code className="block text-zinc-300">
+                <code className="block text-zinc-300 overflow-x-auto text-[11px] sm:text-xs">
                   <span className="text-purple-400">final</span> uploader = <span className="text-cyan-400">DigitalOceanUploader</span>(<br />
                   &nbsp;&nbsp;accessKey: <span className="text-emerald-400">'ACCESS_KEY'</span>,<br />
                   &nbsp;&nbsp;secretKey: <span className="text-emerald-400">'SECRET_KEY'</span>,<br />
@@ -97,9 +97,9 @@ final String? url = await uploader.uploadWithUniqueKey(imageFile);`, 'code')}
           </div>
 
           {/* Right: Metrics & Architecture Strengths */}
-          <div className="lg:col-span-5 space-y-4">
+          <div className="lg:col-span-5 space-y-4 w-full max-w-full">
             {/* Pub.dev Metrics Card */}
-            <div className="p-6 rounded-brag-md bg-black border border-brag-dark-rule space-y-4">
+            <div className="p-6 rounded-brag-md bg-black border border-brag-dark-rule space-y-4 w-full max-w-full">
               <div className="flex items-center justify-between border-b border-brag-dark-rule pb-3">
                 <span className="font-mono text-xs uppercase tracking-wider text-brag-dark-soft">
                   Pub.dev Traction
@@ -115,16 +115,16 @@ final String? url = await uploader.uploadWithUniqueKey(imageFile);`, 'code')}
                 </a>
               </div>
 
-              <div className="grid grid-cols-2 gap-4 font-mono">
+              <div className="grid grid-cols-2 gap-3 sm:gap-4 font-mono">
                 <div className="p-3 rounded bg-brag-dark-elev border border-brag-dark-rule">
                   <div className="text-[11px] text-brag-dark-soft">Peak Weekly</div>
-                  <div className="text-2xl font-bold text-brag-accent mt-1">78</div>
+                  <div className="text-xl sm:text-2xl font-bold text-brag-accent mt-1">78</div>
                   <div className="text-[10px] text-zinc-500">downloads / wk</div>
                 </div>
 
                 <div className="p-3 rounded bg-brag-dark-elev border border-brag-dark-rule">
                   <div className="text-[11px] text-brag-dark-soft">Low Weekly</div>
-                  <div className="text-2xl font-bold text-zinc-300 mt-1">8</div>
+                  <div className="text-xl sm:text-2xl font-bold text-zinc-300 mt-1">8</div>
                   <div className="text-[10px] text-zinc-500">downloads / wk</div>
                 </div>
               </div>

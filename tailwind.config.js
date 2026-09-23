@@ -7,6 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        'brag-hero': 'var(--hero-bg)',
         'brag-orange': 'var(--hero-bg)',
         'brag-ink': 'var(--hero-ink)',
         'brag-ink-soft': 'var(--hero-ink-soft)',
@@ -17,6 +18,7 @@ export default {
         'brag-dark-soft': 'var(--dark-ink-soft)',
         'brag-dark-rule': 'var(--dark-rule)',
         'brag-accent': 'var(--dark-accent)',
+        'hero-accent': 'var(--hero-accent)',
       },
       fontFamily: {
         sans: ['Geist', 'ui-sans-serif', 'system-ui', '-apple-system', 'sans-serif'],

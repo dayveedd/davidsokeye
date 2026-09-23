@@ -170,7 +170,7 @@ export const BragContactModal: React.FC<BragContactModalProps> = ({ isOpen, onCl
                 <div className="pt-2 flex gap-2 justify-center">
                   <button
                     onClick={handleReset}
-                    className="h-11 px-6 rounded-brag-sm bg-brag-accent hover:bg-orange-600 text-white font-mono text-xs uppercase font-bold transition-all shadow-md active:scale-95"
+                    className="h-11 px-6 rounded-brag-sm bg-brag-accent hover:bg-sky-400 text-white font-mono text-xs uppercase font-bold transition-all shadow-md active:scale-95"
                   >
                     return to portfolio
                   </button>
@@ -266,7 +266,7 @@ export const BragContactModal: React.FC<BragContactModalProps> = ({ isOpen, onCl
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full h-12 rounded-brag-sm bg-brag-accent hover:bg-orange-600 text-white font-mono font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all active:scale-98 shadow-md disabled:opacity-60 disabled:cursor-not-allowed"
+                    className="w-full h-12 rounded-brag-sm bg-brag-accent hover:bg-sky-400 text-white font-mono font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all active:scale-98 shadow-md disabled:opacity-60 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? (
                       <>

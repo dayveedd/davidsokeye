@@ -29,7 +29,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, onOpenContact }) =
             </span>
             <span className="text-[11px] text-text-secondary flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-              Open to Global Roles (USD)
+              Open to Global Roles
             </span>
           </div>
         </a>

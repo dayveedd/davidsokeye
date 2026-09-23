@@ -226,7 +226,7 @@ export const BragProjectModal: React.FC<BragProjectModalProps> = ({ project, onC
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="h-11 px-4 rounded-brag-sm bg-brag-accent hover:bg-orange-600 text-white text-xs font-bold uppercase tracking-wider flex items-center gap-2 transition-all"
+                    className="h-11 px-4 rounded-brag-sm bg-brag-accent hover:bg-sky-400 text-white text-xs font-bold uppercase tracking-wider flex items-center gap-2 transition-all"
                   >
                     <span>view live / package</span>
                     <ExternalLink className="w-3.5 h-3.5" />
@@ -237,7 +237,7 @@ export const BragProjectModal: React.FC<BragProjectModalProps> = ({ project, onC
                     href={project.appStoreUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="h-11 px-4 rounded-brag-sm bg-brag-accent hover:bg-orange-600 text-white text-xs font-bold uppercase tracking-wider flex items-center gap-2 transition-all"
+                    className="h-11 px-4 rounded-brag-sm bg-brag-accent hover:bg-sky-400 text-white text-xs font-bold uppercase tracking-wider flex items-center gap-2 transition-all"
                   >
                     <span> app store</span>
                     <ExternalLink className="w-3.5 h-3.5" />

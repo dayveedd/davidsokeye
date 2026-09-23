@@ -21,7 +21,7 @@ export const BragProjectCard: React.FC<BragProjectCardProps> = ({ project, onSel
       {/* Media Window */}
       <div 
         onClick={() => onSelect(project)}
-        className="card-media relative aspect-[16/10] sm:aspect-[16/9] bg-brag-dark-elev overflow-hidden rounded-brag-md border border-brag-dark-rule transition-all duration-300 group-hover:border-brag-accent group-hover:-translate-y-1 group-hover:shadow-[0_24px_60px_-24px_rgba(255,93,40,0.3)] cursor-pointer"
+        className="card-media relative aspect-[16/10] sm:aspect-[16/9] bg-brag-dark-elev overflow-hidden rounded-brag-md border border-brag-dark-rule transition-all duration-300 group-hover:border-brag-accent group-hover:-translate-y-1 group-hover:shadow-[0_24px_60px_-24px_rgba(56,189,248,0.25)] cursor-pointer"
       >
         {/* Standard Project with Screenshots (including digital_ocean_uploader with pubdev.png) */}
         {currentImage && !project.hasNoUi && (
@@ -61,22 +61,22 @@ export const BragProjectCard: React.FC<BragProjectCardProps> = ({ project, onSel
 
         {/* AuraOps: Autonomous Slack Agent with No UI */}
         {project.hasNoUi && (
-          <div className="relative w-full h-full bg-[#181210] p-5 flex flex-col justify-between font-mono text-xs select-none">
+          <div className="relative w-full h-full bg-[#0B101B] p-5 flex flex-col justify-between font-mono text-xs select-none">
             <div className="flex items-center justify-between border-b border-brag-dark-rule pb-2.5">
               <div className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
                 <span className="text-brag-dark-ink font-bold text-sm">Slack Agent @AuraOps</span>
               </div>
-              <span className="text-[10px] px-2 py-0.5 rounded bg-amber-500/15 text-amber-400 border border-amber-500/30">
+              <span className="text-[10px] px-2 py-0.5 rounded bg-sky-500/15 text-sky-300 border border-sky-500/30">
                 HEADLESS (NO UI)
               </span>
             </div>
 
             <div className="py-2.5 space-y-2 text-[11px]">
-              <div className="p-2.5 rounded bg-[#100C0A] border border-brag-dark-rule">
+              <div className="p-2.5 rounded bg-[#060A12] border border-brag-dark-rule">
                 <span className="text-emerald-400">user:</span> "Schedule invoice review & dispatch $450 payment"
               </div>
-              <div className="p-2.5 rounded bg-[#201511] border border-brag-accent/30 text-brag-dark-ink">
+              <div className="p-2.5 rounded bg-[#101726] border border-brag-accent/30 text-brag-dark-ink">
                 <span className="text-brag-accent font-bold">@AuraOps:</span> Requesting Auth0 HITL authorization... <span className="text-emerald-400">Approved ✓</span>
                 <div className="text-[10px] text-brag-dark-soft mt-1">
                   → Paystack payment executed · Supabase audit saved · G-Calendar synchronized

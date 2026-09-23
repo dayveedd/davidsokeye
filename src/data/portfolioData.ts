@@ -2,10 +2,10 @@ import { DeveloperProfile, Project } from '../types/portfolio';
 
 export const developerProfile: DeveloperProfile = {
   name: 'David Sokeye',
-  role: 'Senior Cross-Platform Mobile Engineer',
-  subRole: 'Apple Swift Student Challenge Distinguished Winner',
-  availability: 'Open for Remote Roles & High-Impact Contracts (USD)',
-  bio: 'T-shaped engineer with deep expertise building pixel-perfect, tactile iOS and Flutter applications backed by resilient systems architecture and agentic AI pipelines.',
+  role: 'Mobile Software Engineer',
+  subRole: 'WWDC26 Distinguished Winner',
+  availability: 'Open for Remote Roles & High-Impact Contracts',
+  bio: 'Mobile Software Engineer and WWDC26 Distinguished Winner. I build high-performance iOS and Android applications with offline-first architectures, autonomous AI integrations, and local-first cryptography—shipping cross-platform apps with zero performance compromises.',
   contactEmail: 'oladimejidavid91@gmail.com',
   githubUrl: 'https://github.com/dayveedd',
   linkedinUrl: 'https://www.linkedin.com/in/david-sokeye-7935a2250/',
@@ -31,12 +31,12 @@ export const projects: Project[] = [
       { label: 'distinguished build', type: 'award' }
     ],
     metrics: [
-      { label: 'active users', value: '38k+' },
+      { label: 'downloads', value: '< 1000' },
       { label: 'app store rating', value: '4.9 ★' },
       { label: 'ocr accuracy', value: '99.4%' }
     ],
     appStoreUrl: 'https://apps.apple.com/app/papyr-subscription-tracker/id6797100760',
-    githubUrl: 'https://github.com/dayveedd',
+    githubUrl: 'https://github.com/dayveedd/papyr',
     images: [
       '/assets/images/papyr1.png',
       '/assets/images/papyr2.png',
@@ -64,12 +64,12 @@ export const projects: Project[] = [
       { label: '120 fps skia', type: 'live' }
     ],
     metrics: [
-      { label: 'daily lessons', value: '1.2m+' },
+      { label: 'downloads', value: '< 1000' },
       { label: 'd30 retention', value: '46%' },
       { label: 'frame rate', value: '120 fps' }
     ],
     appStoreUrl: 'https://apple.co/4j0khob',
-    githubUrl: 'https://github.com/dayveedd',
+    githubUrl: 'https://github.com/dayveedd/outside',
     images: [
       '/assets/images/outside1.png',
       '/assets/images/outside2.png',
@@ -143,23 +143,23 @@ export const projects: Project[] = [
     number: '.05',
     title: 'vido vault',
     category: 'secure enclave crypto',
-    tagline: 'Air-Gapped Non-Custodial Multi-Chain Sovereign Vault',
-    context: 'Non-custodial wallet',
-    highlight: 'Hardware-isolated key generation with Apple Secure Enclave & Face ID authentication',
+    tagline: 'Non-Custodial Web3 Vault with MFA & Hardware Biometrics',
+    context: 'Non-custodial cryptographic key vault & Web3 wallet',
+    highlight: 'Engineered with Dart, Web3Auth, Google Authenticator MFA, and hardware biometrics (FaceID/Fingerprint)',
     architectureDetails: [
-      'Hardware-isolated key generation utilizing Apple Secure Enclave (kSecAccessControlBiometryAny) and Android StrongBox Keymaster to prevent private key extraction.',
-      'Hierarchical Deterministic (HD) derivation for EVM & Solana with custom BIP-39/BIP-44 cryptographic primitives audited for side-channel timing leaks.',
-      'Local transaction simulation decoding ABI payloads into human-readable balance diffs before user biometric signature.'
+      'Hardware biometric isolation (FaceID & Fingerprint) backed by native iOS LocalAuthentication and Android BiometricPrompt for zero-knowledge transaction signing.',
+      'Multi-factor authentication (MFA) layer pairing RFC 6238 TOTP Google Authenticator tokens with on-device cryptographic key fragment derivation.',
+      'Web3Auth non-custodial threshold architecture combining social logins with client-side BIP-39 mnemonic seed phrase reconstruction without central custody.'
     ],
-    techStack: ['SwiftUI', 'Secure Enclave', 'Web3.swift', 'BIP-39', 'LocalAuthentication', 'EIP-712'],
+    techStack: ['Flutter', 'Dart', 'Web3Auth', 'Google Authenticator MFA', 'Biometrics (FaceID / Fingerprint)', 'BIP-39 Seed Phrases', 'LocalAuthentication'],
     badges: [
-      { label: 'secure enclave active', type: 'live' },
-      { label: 'non-custodial', type: 'award' }
+      { label: 'biometrics + mfa', type: 'live' },
+      { label: 'web3auth non-custodial', type: 'award' }
     ],
     metrics: [
-      { label: 'secured tvl', value: '$12m+' },
-      { label: 'key breaches', value: '0' },
-      { label: 'auth protocol', value: 'face id' }
+      { label: 'mfa layer', value: 'google auth' },
+      { label: 'biometrics', value: 'faceid / touch' },
+      { label: 'key protocol', value: 'web3auth + bip-39' }
     ],
     githubUrl: 'https://github.com/dayveedd/vido-vault',
     images: [
@@ -227,5 +227,36 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/dayveedd/auraOps-ai-agent',
     images: [],
     hasNoUi: true
+  }
+];
+
+export const craftPillars = [
+  {
+    number: '01',
+    title: '120 FPS Fluidity & Tactile Physics',
+    tagline: 'Zero-lag gestures on ProMotion displays',
+    description: 'A mobile experience should feel like physical glass and paper. Whether engineering custom Metal shaders in SwiftUI or tuning the Flutter Skia/Impeller pipeline, every transition runs decoupled from business logic with unthrottled 120 FPS frame consistency.',
+    details: ['Impeller / Skia custom rendering', 'Metal shader fluid surfaces', 'Sub-millisecond touch tracking']
+  },
+  {
+    number: '02',
+    title: 'Local-First & Offline Sovereignty',
+    tagline: 'Network is an enhancement, not a dependency',
+    description: 'Transient networks should never stall user intent. Every system is built local-first using SQLite, conflict-free CRDT data types, and on-device CoreML/VisionKit token extraction—allowing apps to function flawlessly without waiting on remote round-trips.',
+    details: ['Conflict-Free Replicated Data Types', 'Sub-420ms on-device VisionKit OCR', 'Background task queue persistence']
+  },
+  {
+    number: '03',
+    title: 'Bare-Metal Security & Sensor Throttling',
+    tagline: 'Hardware isolation meets battery conservation',
+    description: 'Bridging high-level mobile frameworks directly to native hardware. From Apple Secure Enclave biometric isolation (FaceID/Fingerprint) and Google Authenticator TOTP to sensor-fusion algorithms that cut CoreLocation battery consumption by 64%.',
+    details: ['Secure Enclave key isolation', 'Google Authenticator MFA', 'Dynamic sensor throttling (-64% battery)']
+  },
+  {
+    number: '04',
+    title: 'Zero-Bloat Open-Source Foundations',
+    tagline: 'Lightweight pure-Dart architectural primitives',
+    description: 'Respecting device memory, download sizes, and compilation speed. Authored digital_ocean_uploader to eliminate heavy multi-megabyte AWS SDKs, implementing pure-Dart HMAC-SHA256 AWS V4 signatures with 100% mockable test harnesses.',
+    details: ['14MB+ app bundle size shaved', 'Pure Dart across 6 platforms', '100% mockable client testing']
   }
 ];
