@@ -164,7 +164,9 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/dayveedd/vido-vault',
     images: [
       '/assets/images/vido1.png',
-      '/assets/images/vido2.png'
+      '/assets/images/vido2.png',
+      '/assets/images/vido3.png',
+      '/assets/images/vido4.png'
     ]
   },
   {
